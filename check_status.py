@@ -32,6 +32,8 @@ def check_status(cpu_limit,network_limit,memory_limitS):
   
   
   #check memory usage
+  #this requires the virtual machine to send out custom metrics "EC2/Memory"
+  #I used an open source code to do that
   metric3 = cw.list_metrics(dimensions={'InstanceId':instance_id},metric_name= 'EC2/Memory')[0]
   datapoints3 = metric3.query(start, end, 'Maximum', 'Percent',period = 60)
   d3 = datapoints3[0]
