@@ -3,7 +3,7 @@
 
 1. To configure the installation on the local system, run installation.bat with cmd. (But currently my credentials are removed from that file)
 
-2. The python script check_status.py takes 3 command line arguments, which stand for cpu_limit, networe_limit and memory_limit respectively. The script will check if the maximum value in the past hour exceeds the limit.
+2. The python script check_status.py takes 3 command line arguments, which stand for cpu_limit, network_limit and memory_limit respectively. The script will check if the maximum value in the past hour exceeds the limit.
    
 3. To simulate server overload situation, simply run "python check_status.py 0 0 0" in cmd.
 
